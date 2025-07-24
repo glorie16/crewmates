@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from './pages/Home'
 import CreateFairy from './pages/CreateFairy'
 import ViewFairies from './pages/ViewFairies'
+import EditFairy from './pages/EditFairy'
 import './App.css'
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create-fairy" element={<CreateFairy />} />
-        <Route path="/view-fairies" element={<ViewFairies/>}/>
+        <Route path="/view-fairies" element={<ViewFairies />} />
+        <Route path="/edit/:id" element={<EditFairy />}/>
       </Routes>
     </div>
   )

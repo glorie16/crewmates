@@ -7,7 +7,7 @@ function Card(props) {
 
   return (
     <div className="Card">
-          <Link to={'edit/' + props.id}></Link>
+          <Link to={`/edit/${props.id}`}>Edit</Link>
           <h2 className="name">{props.name}</h2>
           <h3 className="talent">{props.talent}</h3>
           <h3 className="power_level">{props.power_level}</h3>

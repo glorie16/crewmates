@@ -27,7 +27,7 @@ const CreateFairy = () => {
 
     return (
         <div>
-            <form>
+            <form onSubmit={createFairy} >
                 <label htmlFor="title">Name</label> <br />
                 <input type="text" id="name" name="name" onChange={handleChange} /><br />
                 <br/>
@@ -57,7 +57,7 @@ const CreateFairy = () => {
                 <textarea rows="5" cols="50" id="description" name="description" onChange={handleChange}>
                 </textarea>
                 <br/>
-                <input type="submit" value="Submit" onClick={createFairy} />
+                <input type="submit" value="Submit"/>
             </form>
         </div>
     )
