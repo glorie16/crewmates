@@ -2,7 +2,7 @@
 
 Submitted by: **Gloriele Mendoza**
 
-This web app: **Fairy maker web app based on Tinkerbell. User can create custom fairies and look at a list of created fairies**
+This web app: **Fairy maker web app based on Tinkerbell. User can create custom fairies and look at a list of created fairies. They can also delete and edit current fairies.**
 
 Time spent: **12** hours spent in total
 
@@ -21,10 +21,10 @@ The following **required** functionality is completed:
   - Each crewmate has an edit button that will take users to an update form for the relevant crewmate
   - Users can see the current attributes of their crewmate on the update form
   - After editing the crewmate's attribute values using the form, the user can immediately see those changes reflected in the update form and on the summary page 
-- [ ] **A previously created crewmate can be deleted from the crewmate list**
+- [X] **A previously created crewmate can be deleted from the crewmate list**
   - Using the edit form detailed in the previous _crewmates can be updated_ feature, there is a button that allows users to delete that crewmate
   - After deleting a crewmate, the crewmate should no longer be visible in the summary page
-  - [] **Each crewmate has a direct, unique URL link to an info page about them**
+  - [X] **Each crewmate has a direct, unique URL link to an info page about them**
     - Clicking on a crewmate in the summary page navigates to a detail page for that crewmate
     - The detail page contains extra information about the crewmate not included in the summary page
     - Users can navigate to to the edit form from the detail page
@@ -49,18 +49,17 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+Video created with:
+- Zoom for recording
+- Uploaded onto Imgur
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- It was a little challenging to do css and layout for my app, but overall this was fun!
 
 ## License
 
