@@ -4,7 +4,7 @@ import { supabase } from '../client'
 import { useNavigate } from 'react-router-dom'
 
 
-function EditFairy({ data }) {
+function EditFairy() {
     const navigate = useNavigate()
     const {id} = useParams()
     const [fairy, setFairy] = useState({})

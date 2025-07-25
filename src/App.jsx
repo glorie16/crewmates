@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import CreateFairy from './pages/CreateFairy'
 import ViewFairies from './pages/ViewFairies'
 import EditFairy from './pages/EditFairy'
+import MoreDetails from './pages/MoreDetails'
+import Sidebar from './components/Sidebar'
 import './App.css'
 
 function App() {
@@ -11,12 +13,15 @@ function App() {
 
   return (
     <div className="App">
+
+      <Sidebar/>
        
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create-fairy" element={<CreateFairy />} />
         <Route path="/view-fairies" element={<ViewFairies />} />
-        <Route path="/edit/:id" element={<EditFairy />}/>
+        <Route path="/edit/:id" element={<EditFairy />} />
+        <Route path="/fairy-details/:id" element={<MoreDetails />}/>
       </Routes>
     </div>
   )

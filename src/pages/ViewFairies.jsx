@@ -1,5 +1,6 @@
 import { supabase } from '../client'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 
 const ViewFairies = () => {
@@ -23,7 +24,8 @@ const ViewFairies = () => {
             {
                 list && list.length > 0 ?
                     [...list]
-                        .map((fairy, index) =>
+                        .map((fairy, index) =>(
+        <Link key={fairy.id} to={`/fairy-details/${fairy.id}`}>
             <Card
                 key={fairy.id}
                 id={fairy.id}
@@ -32,7 +34,8 @@ const ViewFairies = () => {
                 power_level={fairy.power_level}
                 description={fairy.description}
             />
-            ) : <h2>No fairies yet!</h2>
+               </Link>             
+            )) : <h2>No fairies yet!</h2>
            }
         </div>
     )
