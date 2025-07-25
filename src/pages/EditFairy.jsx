@@ -50,6 +50,17 @@ function EditFairy() {
         })
     }
 
+    const deleteFairy = async (event) => {
+        event.preventDefault();
+        await supabase
+            .from('Fairies')
+            .delete()
+            .eq('id', id)
+        
+        alert("Fairy deleted.");
+        navigate("/")
+    }
+
   return (
   <div>
         <form onSubmit={updateFairy}>
@@ -82,8 +93,11 @@ function EditFairy() {
             <textarea rows="5" cols="50" id="description" name="description" value={fairy.description || ""} onChange={handleChange}>
             </textarea>
             <br/>
-            <input type="submit" value="Submit"  />
-        </form>
+              <input type="submit" value="Submit" />
+              
+                <button className="deleteButton" onClick={deleteFairy}>Delete Fairy</button>
+          </form>
+          
     </div>
   )
 }

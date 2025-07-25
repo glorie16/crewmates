@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { supabase } from '../client'
+
 
 
 function MoreDetails() {
@@ -19,7 +20,7 @@ function MoreDetails() {
         }
         fetchFairy();
     },[id])
-    
+
 
   return (
   <div>
@@ -27,6 +28,9 @@ function MoreDetails() {
           <h3>Talent: {fairy.talent}</h3>
           <h3>Power Level: {fairy.power_level}</h3>
           <h3>Description: {fairy.description}</h3>
+          <Link to={`/edit/${fairy.id}`}>
+          <button >Edit Fairy</button>
+          </Link>
     </div>
   )
 }
