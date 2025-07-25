@@ -47,14 +47,13 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-
+Here's a walkthrough of my web app (with sound/voiceover):
+https://youtu.be/1gOjQaUSbac
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video created with:
 - Zoom for recording
-- Uploaded onto Imgur
+- Uploaded onto Youtube
 
 ## Notes
 
