@@ -24,7 +24,7 @@ The following **required** functionality is completed:
 - [X] **A previously created crewmate can be deleted from the crewmate list**
   - Using the edit form detailed in the previous _crewmates can be updated_ feature, there is a button that allows users to delete that crewmate
   - After deleting a crewmate, the crewmate should no longer be visible in the summary page
-  - [X] **Each crewmate has a direct, unique URL link to an info page about them**
+- [X] **Each crewmate has a direct, unique URL link to an info page about them**
     - Clicking on a crewmate in the summary page navigates to a detail page for that crewmate
     - The detail page contains extra information about the crewmate not included in the summary page
     - Users can navigate to to the edit form from the detail page
@@ -47,14 +47,13 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-
+Here's a walkthrough of my web app (with sound/voiceover):
+https://youtu.be/1gOjQaUSbac
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video created with:
 - Zoom for recording
-- Uploaded onto Imgur
+- Uploaded onto Youtube
 
 ## Notes
 
