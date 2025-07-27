@@ -1,0 +1,17 @@
+.list-title{
+    font-family: 'Dancing Script', cursive;
+    color: #4e4637;
+}
+
+.createBtn{
+    background-color: #ffd8b2;
+  color: #2e4630;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Dancing Script', cursive;
+}

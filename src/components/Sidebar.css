@@ -1,18 +1,49 @@
-ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 240px;         /* Fixed sidebar width */
-  height: 100vh;        /* Full viewport height */
-  background-color: #f0f0f0;
-  padding: 1rem;
+  width: 240px;
+  height: 100vh;
+  background-color: #2e4630;
+  padding: 2rem 1rem;
   overflow-y: auto;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  font-family: 'Caveat', 'Comic Sans MS', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Satisfy', cursive;
+  color: #f7e6b5; 
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ffb6c1; 
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.sidebar nav ul li a::before {
+  content: '🍃';
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }

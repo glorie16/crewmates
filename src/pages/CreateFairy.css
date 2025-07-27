@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.create-form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #2e4630; /* forest green */
+  border-radius: 20px;
+  box-shadow: 0 0 20px #fff9c41a;
+  color: #fff9c4; /* soft yellow */
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0 1px 1px #1a1a1a55;
+   border: 2px solid #fff9c4; 
+}
+
+.create-form-container label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.5rem;   /* Increased from 1.2rem to 1.5rem */
+  font-weight: 600;    /* Optional: make it a bit bolder */
+  color: #fff9c4;     /* Keep the light yellow color */
+}
+
+.create-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.create-form-container label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.create-form-container input[type="text"],
+.create-form-container textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  color: #2e4630;
+  font-size: 1rem;
+  font-family: 'Dancing Script', cursive;
+  box-shadow: inset 0 0 5px #00000011;
+}
+
+.create-form-container input[type="radio"] {
+  margin-right: 0.4rem;
+}
+
+.create-form-container textarea {
+  resize: none;
+}
+
+.create-form-container input[type="submit"], .deleteButton {
+  background-color: #ffd8b2;
+  color: #2e4630;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Dancing Script', cursive;
+}
+
+.create-form-container input[type="submit"]:hover {
+  background-color: #fff9c4;
+  box-shadow: 0 0 12px #fff9c499;
+}
+
+.titles{
+    font-size:2rem;
+    margin-bottom:0;
+}

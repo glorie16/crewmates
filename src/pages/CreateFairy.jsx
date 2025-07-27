@@ -1,9 +1,10 @@
 import { supabase } from '../client'
 import { useState } from 'react'
+import './CreateFairy.css'
 
 const CreateFairy = () => {
     const [fairy, setFairy] = useState({ name: "", power_level: 0, talent: "", description: "" })
-    const talents = ["Garden", "Tinker", "Water", "Light", "Animal", "Frost", "Fast-Flying"]
+    const talents = ["Garden🌸", "Tinker🔨", "Water💧", "Light✨", "Animal🐻", "Frost❄️", "Fast-Flying🌪️"]
 
     const createFairy = async (event) => {
         event.preventDefault();
@@ -26,13 +27,13 @@ const CreateFairy = () => {
     }
 
     return (
-        <div>
+        <div className="create-form-container">
             <form onSubmit={createFairy} >
-                <label htmlFor="title">Name</label> <br />
+                <h3 className="titles">Name</h3>
                 <input type="text" id="name" name="name" onChange={handleChange} /><br />
                 <br/>
 
-                <label htmlFor="talent">Talent</label><br />
+                <h3 className="titles">Talent</h3>
                 <div>
                     {talents.map(talentOption => (
                         <label key={talentOption}>
@@ -42,18 +43,19 @@ const CreateFairy = () => {
                             name="talent"
                             value={talentOption}
                             checked={fairy.talent === talentOption}
-                            onChange={handleChange} /><br />
+                            onChange={handleChange} />
                             {talentOption}
                         <br />
                         </label>
-                        ))}
+                    ))}
+                    <br/>
                     </div>
                     
-                <label htmlFor="talent">Power Level</label><br />
+                <h3 className="titles">Power Level</h3>
                 <input type="text" id="power_level" name="power_level" onChange={handleChange} /><br />
                 <br/>
 
-                <label htmlFor="description">Description</label><br />
+                <h3 className="titles">Description</h3>
                 <textarea rows="5" cols="50" id="description" name="description" onChange={handleChange}>
                 </textarea>
                 <br/>

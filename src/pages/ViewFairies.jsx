@@ -2,6 +2,7 @@ import { supabase } from '../client'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
+import './ViewFairies.css'
 
 const ViewFairies = () => {
     const [list, setList] = useState([])
@@ -20,7 +21,8 @@ const ViewFairies = () => {
 
 
     return (
-        <div className = "fairies-list">
+        <div className="fairies-list">
+            <h1 className="list-title">Your Fairies 🧚</h1>
             {
                 list && list.length > 0 ?
                     [...list]
@@ -35,7 +37,11 @@ const ViewFairies = () => {
                 description={fairy.description}
             />
                </Link>             
-            )) : <h2>No fairies yet!</h2>
+                        )) : <div><h2>No fairies yet!</h2>
+                <Link path to='/create-fairy'>
+                <button className="createBtn">Create one here! </button>
+                        </Link>
+                        </div>
            }
         </div>
     )
