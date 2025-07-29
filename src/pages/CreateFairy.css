@@ -8,10 +8,10 @@
   max-width: 600px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #2e4630; /* forest green */
+  background-color: #2e4630;
   border-radius: 20px;
   box-shadow: 0 0 20px #fff9c41a;
-  color: #fff9c4; /* soft yellow */
+  color: #fff9c4;
   font-family: 'Dancing Script', cursive;
   text-shadow: 0 1px 1px #1a1a1a55;
   border: 2px solid #fff9c4; 
@@ -20,9 +20,9 @@
 .create-form-container label {
   display: block;
   margin-top: 1rem;
-  font-size: 1.5rem;   /* Increased from 1.2rem to 1.5rem */
-  font-weight: 600;    /* Optional: make it a bit bolder */
-  color: #fff9c4;     /* Keep the light yellow color */
+  font-size: 1.5rem;   
+  font-weight: 600;    
+  color: #fff9c4;   
 }
 
 .create-form-container h2 {
@@ -81,6 +81,6 @@
 }
 
 .titles{
-    font-size:2rem;
-    margin-bottom:0;
+  font-size:2rem;
+  margin-bottom:0;
 }
