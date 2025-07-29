@@ -4,7 +4,6 @@ import './Card.css'
 
 
 function Card(props) {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="Card">

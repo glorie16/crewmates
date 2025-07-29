@@ -14,7 +14,7 @@
   color: #fff9c4; /* soft yellow */
   font-family: 'Dancing Script', cursive;
   text-shadow: 0 1px 1px #1a1a1a55;
-   border: 2px solid #fff9c4; 
+  border: 2px solid #fff9c4; 
 }
 
 .create-form-container label {
@@ -70,9 +70,14 @@
   font-family: 'Dancing Script', cursive;
 }
 
-.create-form-container input[type="submit"]:hover {
+.create-form-container input[type="submit"]:hover{
   background-color: #fff9c4;
   box-shadow: 0 0 12px #fff9c499;
+}
+
+.deleteButton:hover{
+  background-color: #ffb3a1;
+  box-shadow: 0 0 12px #ffb3a199;
 }
 
 .titles{

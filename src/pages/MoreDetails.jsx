@@ -3,8 +3,6 @@ import { useParams, Link } from 'react-router-dom'
 import { supabase } from '../client'
 import './MoreDetails.css'
 
-
-
 function MoreDetails() {
     const {id} = useParams()
     const [fairy, setFairy] = useState({})
