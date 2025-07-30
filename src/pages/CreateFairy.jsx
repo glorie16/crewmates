@@ -16,6 +16,7 @@ const CreateFairy = () => {
         alert("Fairy created!");
         window.location = "/"
     }
+    
     const handleChange = (event) => {
         const {name, value} = event.target
         setFairy( (prev) => {
