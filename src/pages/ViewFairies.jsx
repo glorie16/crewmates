@@ -25,11 +25,9 @@ const ViewFairies = () => {
             <h1 className="list-title">Your Fairies 🧚</h1>
             {
                 list && list.length > 0 ?
-                    [...list]
-                        .map((fairy, index) =>(
+                        list.map(fairy =>(
         <Link key={fairy.id} to={`/fairy-details/${fairy.id}`}>
             <Card
-                key={fairy.id}
                 id={fairy.id}
                 name={fairy.name}
                 talent={fairy.talent}
@@ -38,7 +36,7 @@ const ViewFairies = () => {
             />
                </Link>             
                         )) : <div><h2>No fairies yet!</h2>
-                <Link path to='/create-fairy'>
+                <Link to='/create-fairy'>
                 <button className="createBtn">Create one here! </button>
                         </Link>
                         </div>
